@@ -116,7 +116,7 @@ const Search = () => {
           }}
           primary
           content='Search'
-          disabled={searchLoader}
+          disabled={searchLoader || !value.length}
           onClick={handleResultSelect}
         />
       </Grid.Column>
